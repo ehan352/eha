@@ -1,0 +1,82 @@
+body {
+    background-color: #f8f9fa;
+    background-image: url('th\ \(1\).jpeg'); /* Tambahkan gambar latar belakang */
+    background-size: cover; /* Menyesuaikan ukuran gambar agar menutupi seluruh layar */
+    background-position: center; /* Pusatkan gambar latar belakang */
+    background-repeat: no-repeat; /* Hindari pengulangan gambar */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.birthday-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Membuat latar belakang semi-transparan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    color: #ff6347;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.birthday-cake {
+    width: 40%;
+    max-width: 300px;
+    border-radius: 10px;
+    transform: rotate(-5deg);
+    transition: transform 0.5s ease;
+}
+
+.birthday-cake:hover {
+    transform: rotate(0deg) scale(1.1);
+}
+
+.person-photo {
+    width: 60%;
+    max-width: 200px;
+    transform: rotate(5deg);
+    transition: transform 0.5s ease;
+    border-radius: 0; /* Membuat gambar berbentuk kotak */
+}
+
+.person-photo:hover {
+    transform: rotate(0deg) scale(1.1);
+}
+
+#birthday-message {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.moving-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hi;
+    animation: moveText 20s linear infinite; /* Durasi animasi diperpanjang menjadi 20 detik */
+}
+
+@keyframes moveText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
